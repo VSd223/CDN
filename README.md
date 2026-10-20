@@ -11,10 +11,6 @@
 ```bash
 git clone https://github.com/VSd223/CDN.git
 cd CDN
-# Если файл называется CDN.s, переименовываем в CDN.sh:
-[ -f CDN.s ] && mv CDN.s CDN.sh
-# Устраняем несовместимость строк Windows (CRLF -> LF)
-sed -i -e 's/\r$//' CDN.sh
 # Даем права на запуск и запускаем
 chmod +x CDN.sh
 sudo ./CDN.sh
